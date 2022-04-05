@@ -1,0 +1,57 @@
+<head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+</head>
+
+<body>
+<h1> SHD server health </h1>
+<p id='embed'></p>
+
+<div> 
+    <table>
+        <tbody>
+            <tr>
+                <th id="mylog">
+                    Строка 1. Колонка 1.
+                </th>
+                <th id="mylog">
+                    Строка 1. Колонка 2.
+                </th>
+                <th id="mylog">
+                    Строка 1. Колонка 3.
+                </th>
+            </tr>
+            <tr>
+                <th id="mylog">
+                    Строка 2. Колонка 1.
+                </th>
+                <th id="mylog">
+                    Строка 2. Колонка 2.
+                </th>
+                <th>
+                    Строка 2. Колонка 3.
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+
+/* console.log = (...args) => {
+    args.map(arg => document.querySelector("#mylog").innerHTML += arg + '<br>')
+    console.log(args)
+  } */
+
+document.getElementById('embed').innerHTML = "{{embed}}"
+
+  fetch('/test')
+      .then(function (response) {
+          return response.json();
+      }).then(function (text) {
+          console.log('GET response text:');
+          console.log(text);
+          console.log(JSON.stringify(text))
+          console.log('')
+      });
+
+</script>
