@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_page():
-    example_embed='Тут будет табличка с температурой'
+    example_embed=''
     return render_template('index.html', embed=example_embed)
 
 @app.route('/test', methods=['GET'])

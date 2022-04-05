@@ -1,4 +1,4 @@
-table {
+/* table {
     color: #fff;
   
     background-color: #343a40;
@@ -16,4 +16,116 @@ table {
   
   tbody tr {
     background-color: #2e3338;
+  } */
+
+  @font-face {
+    font-family: Exo 2;
+    src: url(../fonts/Exo2.0-Black.otf);
+  }
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    font-family: Exo2, sans-serif;
+    min-height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .LandingLayout {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
+    margin: 0 auto;
+    /* padding: 216px 97px 96px 76px; */
+  }
+
+  .LandingLayout_header {
+    display: inline-flex;
+    height: 315px;
+    background-color: #7BA2D0;
+    /* padding: 216px 97px 38px 76px; */
+  }
+
+  .header_main {
+    width: 21%;
+    background-color: #e5e5e5;
+    border-bottom-right-radius: 20px;
+    padding-left: 76px;
+    padding-top: 216px;
+    padding-bottom: 39px;
+  }
+
+  .header_main_btn {
+    position: relative;
+    width: 250px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 3px solid #ffffff;
+    border-radius: 14px;
+    color: #7BA2D0;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header_main_btn_txt {
+    position: absolute;
+    left: 23px;
+  }
+
+
+  .header_main_btn_arrow {
+    position: absolute;
+    top: 8px;
+    right: 23px;
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-left: 5px solid #7BA2D0;
+    border-bottom: 5px solid #7BA2D0;
+    transform: rotate(315deg);
+  }
+
+  .header_section {
+    width: 79%;
+    padding: 226px 97px 39px 124px;
+    display: inline-flex;
+  }
+
+  .header_section_btn {
+    width: 235px;
+    height: 49px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    background-color: #7BA2D0;
+    color: #ffffff;
+    margin-right: 57px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .header_section_btn_active {
+    width: 235px;
+    height: 49px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: black;
+    margin-right: 57px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .LandingLayout_content {
+    padding: 52px 100px 96px 76px;
   }
