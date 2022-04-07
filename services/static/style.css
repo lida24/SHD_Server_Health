@@ -119,22 +119,23 @@
   table {
       transform: rotate(-90deg);
       border-collapse: separate;
-      border-spacing: 16px 100px;
+      border-spacing: 10px 110px;
+      font-size: 14px;
       /* padding: 90px; */
       z-index: 1000;
       position: absolute;
-      top: 540px;
-      left: 0;
-      width: 1265px;
-      height: 562px;
+      top: 270px;
+      left: 420px;
+      width: 500px;
+      height: 345px;
   }
   
   th {
       transform: rotate(90deg);
       border: 1px solid rgba(0, 0, 0, 0.1);
       border-radius: 5px;
-      width: 100px;
-      height: 28px;
+      width: 10px;
+      height: 10px;
   }
   img {
     width: 1265px;

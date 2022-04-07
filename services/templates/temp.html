@@ -21,18 +21,19 @@
         <div class="LandingLayout_content">
         </div>
         <div class="container-1">
-          <img src="../static/1.jpeg" /> 
+          <img src="../static/1.jpeg"> 
             <table>
                 <tbody>
                     {% for heat in temp_log.heatmap %}
                         <tr>
                             {% for temp in heat[::-1] %}
-                                <th>{{ temp }}</th>
+                                <th style="background-color: {{ set_color(temp) }};">{{ temp }}</th>
                             {% endfor %}
                         </tr>
                     {% endfor %}
                 </tbody>
               </table>
+          </div>
         </div>
       </div>
     </div>
