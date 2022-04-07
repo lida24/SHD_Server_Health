@@ -1,34 +1,14 @@
-/* table {
-    color: #fff;
-  
-    background-color: #343a40;
-  }
-  
-  td,
-  th {
-    padding: 1em;
-  }
-  
-  th {
-    text-align: left;
-    vertical-align: bottom;
-  }
-  
-  tbody tr {
-    background-color: #2e3338;
-  } */
-
   @font-face {
-    font-family: Exo 2;
+    font-family: 'Exo 2';
     src: url(../fonts/Exo2.0-Black.otf);
   }
 
   html {
+    font-family: 'Exo 2', sans-serif;
     height: 100%;
   }
 
   body {
-    font-family: Exo2, sans-serif;
     min-height: 100%;
     overflow-x: hidden;
     margin: 0;
@@ -128,4 +108,25 @@
 
   .LandingLayout_content {
     padding: 52px 100px 96px 76px;
+  }
+
+  .container-1 {
+    height: max-content;
+    width: max-content;
+    padding: 100px;
+  }
+  
+  table {
+      transform: rotate(-90deg);
+      border-collapse: separate;
+      border-spacing: 16px 102px;
+      padding: 90px;
+  }
+  
+  th {
+      transform: rotate(90deg);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      width: 100px;
+      height: 28px;
   }
