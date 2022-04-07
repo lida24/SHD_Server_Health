@@ -119,8 +119,14 @@
   table {
       transform: rotate(-90deg);
       border-collapse: separate;
-      border-spacing: 16px 102px;
-      padding: 90px;
+      border-spacing: 16px 100px;
+      /* padding: 90px; */
+      z-index: 1000;
+      position: absolute;
+      top: 540px;
+      left: 0;
+      width: 1265px;
+      height: 562px;
   }
   
   th {
@@ -129,4 +135,10 @@
       border-radius: 5px;
       width: 100px;
       height: 28px;
+  }
+  img {
+    width: 1265px;
+    height: 562px;
+    z-index: 1;
+    position: absolute;
   }
