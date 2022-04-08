@@ -1,6 +1,6 @@
   @font-face {
     font-family: 'Exo 2';
-    src: url(../fonts/Exo2.0-Black.otf);
+    src: url(./fonts/Exo2.0-Black.otf);
   }
 
   html {
@@ -137,7 +137,8 @@
       width: 10px;
       height: 10px;
   }
-  img {
+  
+  svg {
     width: 1265px;
     height: 562px;
     z-index: 1;
