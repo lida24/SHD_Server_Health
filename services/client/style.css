@@ -3,6 +3,11 @@
     src: url(./fonts/Exo2.0-Black.otf);
   }
 
+  @font-face {
+    font-family: 'Exo Medium';
+    src: url(./fonts/Exo2.0-Medium.otf);
+  }
+
   html {
     font-family: 'Exo 2', sans-serif;
     height: 100%;
@@ -121,21 +126,44 @@
       border-collapse: separate;
       border-spacing: 10px 110px;
       font-size: 14px;
-      /* padding: 90px; */
       z-index: 1000;
       position: absolute;
       top: 270px;
-      left: 420px;
+      left: 440px;
       width: 500px;
       height: 345px;
   }
   
   th {
+      font-family: 'Exo Medium', sans-serif;
+      font-weight: lighter;
+      font-size: 14px;
       transform: rotate(90deg);
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
       width: 10px;
       height: 10px;
+  }
+
+  th::before {
+    top: 1px;
+    width: 100px;
+    height: 28px;
+    left: -90px;
+    position: absolute;
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+  }
+
+  th::after {
+    content: '';
+    top: -5px;
+    width: 100px;
+    height: 28px;
+    left: -58px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    position: absolute;
+    z-index: -3;
+/*     background-color: aqua; */
   }
   
   svg {

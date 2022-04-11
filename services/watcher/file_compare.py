@@ -9,7 +9,7 @@ def json_compare(json1, json2):
 
     for i in range(len(json1)):
         if json1[i] != json2[i]:
-            msg += "heatmap has changed from " + str(json1[i]) + " to " + str(json2[i]) + "\n"
+            msg += "heatmap has changed from " + str(json2[i]) + " to " + str(json1[i]) + "\n"
                     
     return msg
 
