@@ -4,7 +4,7 @@ def load_json():
     print("loading json...start")
     global  __data_columns
 
-    with open("temp_log.json", "r") as f:
+    with open("./../watcher/temp_log.json.bkup", "r") as f:
         __data_columns = json.load(f)['heatmap']
 
 def get_heatmap():
