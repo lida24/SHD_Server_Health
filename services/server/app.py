@@ -1,11 +1,13 @@
 from flask import Flask, request, jsonify
 
+import time
 import helper_functions
 
 app = Flask(__name__)
 
 @app.route('/get_heatmap', methods=['GET'])
 def get_location_names():
+    helper_functions.load_json()
     response = jsonify({
         'heatmap': helper_functions.get_heatmap()
     })
@@ -14,6 +16,5 @@ def get_location_names():
     return response
 
 if __name__ == "__main__":
-    print("Starting Python Flask Server For Home Price Prediction...")
-    helper_functions.load_json()
+    print("Starting Python Flask Server...")
     app.run()

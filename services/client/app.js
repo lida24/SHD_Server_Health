@@ -31,7 +31,7 @@ let colors = ['	#00008B', '	#0000CD', '	#0000EE', '	#0000FF', '#3A5FCD', '#436EE
         th.className = `temperature-${index_n}-${index_j} `;
         let styleElem = th.appendChild(document.createElement("style"));
         styleElem.innerHTML = `.temperature-${index_n}-${index_j}::after {background-color: ${colors[number - colors.length - 1]}}`;
-/*         console.log(colors[number - colors.length]);
+/*      console.log(colors[number - colors.length]);
         console.log(number - colors.length); */
     }
     if (index_j % 2 == 0) {
