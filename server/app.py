@@ -1,6 +1,5 @@
-from flask import Flask, request, jsonify
+from flask import Flask, jsonify
 
-import time
 import helper_functions
 
 app = Flask(__name__)
@@ -12,7 +11,6 @@ def get_location_names():
         'heatmap': helper_functions.get_heatmap()
     })
     response.headers.add('Access-Control-Allow-Origin', '*')
-
     return response
 
 if __name__ == "__main__":
